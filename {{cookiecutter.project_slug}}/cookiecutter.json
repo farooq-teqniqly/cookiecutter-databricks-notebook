@@ -1,0 +1,20 @@
+{
+    "company_name": "Contoso",
+    "email": "jdoe@contoso.com",
+    "github_username": "contoso",
+    "project_name": "Databricks Notebook Boilerplate",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}_notebook",
+    "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
+    "pypi_username": "{{ cookiecutter.github_username }}",
+    "version": "0.1.0",
+    "use_pypi_deployment_with_azure_devops": "y",
+    "create_author_file": "y",
+    "open_source_license": [
+        "MIT license",
+        "BSD license",
+        "ISC license",
+        "Apache Software License 2.0",
+        "GNU General Public License v3",
+        "Not open source"
+    ]
+}
