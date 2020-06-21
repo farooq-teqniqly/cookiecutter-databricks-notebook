@@ -4,9 +4,14 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+cookiecutter = "==1.7.2"
+pytest= "==5.4.3"
+tox= "==3.15.2"
+pytest-cookies = "==0.5.1"
+pipenv-setup = "==3.0.1"
 
 [packages]
-cookiecutter = "*"
+
 
 [requires]
 python_version = "3.8"
