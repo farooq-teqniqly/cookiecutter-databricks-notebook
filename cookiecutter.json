@@ -3,7 +3,7 @@
     "email": "jdoe@contoso.com",
     "github_username": "contoso",
     "project_name": "Databricks Notebook Boilerplate",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}_notebook",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
     "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
     "pypi_username": "{{ cookiecutter.github_username }}",
     "version": "0.1.0",

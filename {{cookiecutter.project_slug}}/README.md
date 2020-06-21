@@ -1,9 +1,7 @@
 {% set is_open_source = cookiecutter.open_source_license != 'Not open source' -%}
-{% for _ in cookiecutter.project_name %}={% endfor %}
-{{ cookiecutter.project_name }}
-{% for _ in cookiecutter.project_name %}={% endfor %}
+# {{ cookiecutter.project_name }}
 
-[https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }}.svg)](https://pypi.python.org/pypi/{{ cookiecutter.project_slug }}/)
+![](https://img.shields.io/pypi/v/{{ cookiecutter.project_slug }})
 
 {{ cookiecutter.project_short_description }}
 
@@ -17,7 +15,7 @@
 
 ## Credits
 
-This package was created with Cookiecutter_ and the [teqniqly/cookiecutter-databricks-notebook](https://github.com/teqniqly/cookiecutter-databricks-notebook) project template
+This package was created with Cookiecutter and the [teqniqly/cookiecutter-databricks-notebook](https://github.com/teqniqly/cookiecutter-databricks-notebook) project template
 which is based on the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter) project template.
 
 ## Contributing
@@ -75,12 +73,13 @@ Ready to contribute? Here's how to set up ```{{ cookiecutter.project_slug }}``` 
     ```
     $ git clone git@github.com:your_name_here/{{ cookiecutter.project_slug }}.git
     ```
-3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
+3. Install your local copy into a Pipenv. Assuming you have pipenv installed, this is how you set up your fork for local development:
 
     ```
-    $ mkvirtualenv {{ cookiecutter.project_slug }}
     $ cd {{ cookiecutter.project_slug }}/
-    $ python setup.py develop
+    $ pipenv --python 3.7 
+    $ pipenv install -r requirements_dev.txt
+    $ pipenv shell
     ```
 
 4. Create a branch for local development::
@@ -96,7 +95,7 @@ Ready to contribute? Here's how to set up ```{{ cookiecutter.project_slug }}``` 
 
     ```$ python setup.py test``` or ```$ tox```
 
-   To get tox, just ```pip install``` them into your virtualenv.
+   To get tox, just ```pipenv install``` them into your Pipenv.
 
 6. Commit your changes and push your branch to GitHub::
 

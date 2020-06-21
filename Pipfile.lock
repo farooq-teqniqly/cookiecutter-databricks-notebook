@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "2648e425615dfc80f8ad49b937bc6eb87afab9bb04d39c9bfc9ea1203976d3db"
+            "sha256": "501a3ac0b39654cd44f2f5584ca05ba1b78c7faa64efeb58adfbca18e16f33bf"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -61,6 +61,14 @@
             "markers": "python_version >= '3.6'",
             "version": "==19.10b0"
         },
+        "bump2version": {
+            "hashes": [
+                "sha256:477f0e18a0d58e50bb3dbc9af7fcda464fd0ebfc7a6151d8888602d7153171a0",
+                "sha256:cd4f3a231305e405ed8944d8ff35bd742d9bc740ad62f483bd0ca21ce7131984"
+            ],
+            "index": "pypi",
+            "version": "==1.0.0"
+        },
         "cached-property": {
             "hashes": [
                 "sha256:3a026f1a54135677e7da5ce819b0c690f156f37976f3e30c5430740725203d7f",
@@ -100,7 +108,7 @@
                 "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff",
                 "sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"
             ],
-            "markers": "sys_platform == 'win32'",
+            "markers": "platform_system == 'Windows'",
             "version": "==0.4.3"
         },
         "cookiecutter": {
